@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Francois One", sans-serif;
+}
+
+:root {
+    --primary-color: #41cf99;
+    --secondary-color: #ecde13c5;
+    --tertiary-color: #9acaf7b9;
+    --quaternary-color: #8b24df;
+    --danger-color: ;
+    --background-color: #ee66dc;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #fff;
+}
+
+#container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+
+#img img {
+    width: 700px;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px;
+    color: #fff;
+    background-color: var(--background-color);
+    border-radius: 8px;
+
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#title {
+    font-size: 40px;
+    position: relative;
+    color: var(--secondary-color);
+}
+
+#title::after {
+    position: absolute;
+    content: "";
+    background-color: var(--primary-color);
+    width: 112px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
+.input-box label {
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--tertiary-color);
+    padding: 6px;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+.input-field span,
+.input-field i {
+    color: var(--text-color);
+    font-size: 24px;
+    padding: 8px 16px;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 24px;
+    color: #fff;
+    padding: 0 8px;
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+#calculate {
+    border: none;
+    font-size: 20px;
+    background-color: var(--quaternary-color);
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#result {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    border-top: 1px solid var(--secondary-color);
+    padding: 12px 0; 
+}
+
+#imc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 36px;
+}
+
+#imc span:last-child {
+    font-size: 16px;
+    color: #fff;
+}
+
+.normal {
+    color: #41cf99;
+}
+
+.attention {
+    color: #eb1b1be5;
+}
+
+#description {
+    font-size: 30px;
+}
+
+#more-info {
+    border-top: 1px solid var(--secondary-color);
+    padding-top: 24px;
+}
+
+#more-info a {
+    color: var(--quaternary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+#more-info a:hover {
+    color: var(--primary-color);
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--background-color); 
+    color: #fff; 
+}
+
+footer a {
+    color: var(--quaternary-color);
+    text-decoration: none ;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--secondary-color); 
+}
